@@ -6,11 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Components Playground</title>
   <script src="modal.js"></script>
+  <script src="tooltip.js"></script>
 </head>
 <body>
-  <uc-modal opened>
+  <p><rpb-tooltip>Web components</rpb-tooltip> rock!</p>
+  <uc-modal>
     <h1 slot="title">Modal title</h1>
     <p>Our first web component</p>
   </uc-modal>
+  <rpb-tooltip></rpb-tooltip>
+  <script>
+    const modal = document.querySelector('uc-modal');
+    setTimeout(() => {
+      modal.open();
+    }, 2000);
+  </script>
 </body>
 </html>
