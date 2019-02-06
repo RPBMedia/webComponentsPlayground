@@ -9,17 +9,7 @@
   <script src="tooltip.js"></script>
 </head>
 <body>
-  <p><rpb-tooltip>Web components</rpb-tooltip> rock!</p>
-  <uc-modal>
-    <h1 slot="title">Modal title</h1>
-    <p>Our first web component</p>
-  </uc-modal>
-  <rpb-tooltip></rpb-tooltip>
-  <script>
-    const modal = document.querySelector('uc-modal');
-    setTimeout(() => {
-      modal.open();
-    }, 2000);
-  </script>
+  <p><rpb-tooltip text="Set of standards">Web components</rpb-tooltip> rock!</p>
+  <rpb-tooltip>Another toooltip!</rpb-tooltip>
 </body>
 </html>
