@@ -5,11 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Components Playground</title>
+  <style>
+      div {
+        border: 2px solid orange;
+      }
+
+      rpb-tooltip {
+        border: 1px solid blue;
+        padding: 0.15rem;
+      }
+
+      /* .highlight {
+        background-color: rgb(235, 193, 66);
+      } */
+  </style>
   <script src="modal.js"></script>
   <script src="tooltip.js"></script>
+  <script src="confirm-link.js"></script>
 </head>
 <body>
-  <p><rpb-tooltip text="Set of standards">Web components</rpb-tooltip> rock!</p>
-  <rpb-tooltip>Another toooltip!</rpb-tooltip>
+  <p>
+    <rpb-tooltip text="Set of standards">
+      <span class="highlight">Web components</span>
+    </rpb-tooltip>
+    rock!
+  </p>
+  <rpb-tooltip>Another toooltip!</rpb-tooltip></br>
+  <rpb-tooltip></rpb-tooltip>
+  <div>This will not get the web component styles</div>
+  <a is="rpb-confirm-link" href="https://www.google.com">Google</a>
 </body>
 </html>
