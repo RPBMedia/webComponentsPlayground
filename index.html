@@ -6,18 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Components Playground</title>
   <style>
-      div {
-        border: 2px solid orange;
+
+      html {
+        --color-primary: rgb(153, 184, 194);
+        font-family: sens-serif;
       }
 
-      rpb-tooltip {
-        border: 1px solid blue;
-        padding: 0.15rem;
-      }
-
-      /* .highlight {
-        background-color: rgb(235, 193, 66);
-      } */
   </style>
   <script src="modal.js"></script>
   <script src="tooltip.js"></script>
@@ -25,14 +19,13 @@
 </head>
 <body>
   <p>
-    <rpb-tooltip text="Set of standards">
+    <rpb-tooltip class="important" text="Set of standards">
       <span class="highlight">Web components</span>
     </rpb-tooltip>
     rock!
   </p>
   <rpb-tooltip>Another toooltip!</rpb-tooltip></br>
   <rpb-tooltip></rpb-tooltip>
-  <div>This will not get the web component styles</div>
   <a is="rpb-confirm-link" href="https://www.google.com">Google</a>
 </body>
 </html>
